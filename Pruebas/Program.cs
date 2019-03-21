@@ -10,6 +10,7 @@ namespace Pruebas
     {
         static void Main(string[] args)
         {
+            string[] Casos;
             try
             {
                 using (StreamReader sr = new StreamReader("C:/Users/Isaac/Documents/automatizar-pruebas-unitarias-2019-Isaac2797/Casos.txt"))
@@ -18,7 +19,9 @@ namespace Pruebas
 
                     while ((row = sr.ReadLine()) != null)
                     {
-                        Console.WriteLine(row);
+                        Casos = row.Split(':');
+                        foreach (string word in Casos)
+                            Console.WriteLine(word);
                     }
                     Console.ReadLine();
                 }
