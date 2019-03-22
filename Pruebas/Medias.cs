@@ -27,7 +27,7 @@ namespace Pruebas
          */
         private static double raizEnesima(double x, int n)
         {
-            return Math.Pow(x, 1 / n);
+            return Math.Pow(x, 1 / Convert.ToDouble(n));
         }
 
         /**
@@ -38,7 +38,7 @@ namespace Pruebas
             int multi = 1;
             for (int i = 0; i < vals.Length; i++)
             {
-                multi = vals[i];
+                multi *= vals[i];
             }
             return raizEnesima(multi, vals.Length);
         }
