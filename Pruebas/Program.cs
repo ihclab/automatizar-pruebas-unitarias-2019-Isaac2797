@@ -25,62 +25,70 @@ namespace Pruebas
                         foreach (string word in Casos)
                             Console.WriteLine(word);
 
-                        double newresult = 0;
-                        double finalresult = Convert.ToDouble(Casos[3]);
-                        if (Casos[2] != "NULL")
+                        try
                         {
-                            string[] numbers = Casos[2].Split(' ');
-                            int[] values = new int[numbers.Length];
-                            int inc = 0;
-
-                            foreach (string number in numbers)
+                            double newresult = 0;
+                            double finalresult = Convert.ToDouble(Casos[3]);
+                            if (Casos[2] != "NULL")
                             {
-                                values[inc] = Convert.ToInt32(number);
-                                inc++;
+                                string[] numbers = Casos[2].Split(' ');
+                                int[] values = new int[numbers.Length];
+                                int inc = 0;
+
+                                foreach (string number in numbers)
+                                {
+                                    values[inc] = Convert.ToInt32(number);
+                                    inc++;
+                                }
+
+                                switch (Casos[1])
+                                {
+                                    case "mediaAritmetica":
+                                        newresult = Medias.mediaAritmetica(values);
+                                        newresult = Math.Truncate(10000 * newresult) / 10000;
+                                        Console.WriteLine("Resultado final: " + newresult);
+                                        if (newresult == finalresult)
+                                        {
+                                            Console.WriteLine("Exito" + "\n");
+                                        }
+                                        else
+                                            Console.WriteLine("Fallo" + "\n");
+                                        break;
+
+                                    case "mediaGeometrica":
+
+                                        newresult = medias.mediaGeometrica(values);
+                                        newresult = Math.Truncate(10000 * newresult) / 10000;
+                                        Console.WriteLine("Resultado final: " + newresult);
+                                        if (newresult == finalresult)
+                                        {
+                                            Console.WriteLine("Exito" + "\n");
+                                        }
+                                        else
+                                            Console.WriteLine("Fallo" + "\n");
+                                        break;
+
+                                    case "mediaArmonica":
+                                        newresult = Medias.mediaArmonica(values);
+                                        newresult = Math.Truncate(10000 * newresult) / 10000;
+                                        Console.WriteLine("Resultado final: " + newresult);
+                                        if (newresult == finalresult)
+                                        {
+                                            Console.WriteLine("Exito" + "\n");
+                                        }
+                                        else
+                                            Console.WriteLine("Fallo" + "\n");
+                                        break;
+                                }
                             }
-
-                            switch (Casos[1])
-                            {
-                                case "mediaAritmetica":
-                                    newresult = Medias.mediaAritmetica(values);
-                                    newresult = Math.Truncate(10000 * newresult) / 10000;
-                                    Console.WriteLine("Resultado final: " + newresult);
-                                    if (newresult == finalresult)
-                                    {
-                                        Console.WriteLine("Exito" + "\n");
-                                    }
-                                    else
-                                        Console.WriteLine("Fallo" + "\n");
-                                    break;
-
-                                case "mediaGeometrica":
-
-                                    newresult = medias.mediaGeometrica(values);
-                                    newresult = Math.Truncate(10000 * newresult) / 10000;
-                                    Console.WriteLine("Resultado final: " + newresult);
-                                    if (newresult == finalresult)
-                                    {
-                                        Console.WriteLine("Exito" + "\n");
-                                    }
-                                    else
-                                        Console.WriteLine("Fallo" + "\n");
-                                    break;
-
-                                case "mediaArmonica":
-                                    newresult = Medias.mediaArmonica(values);
-                                    newresult = Math.Truncate(10000 * newresult) / 10000;
-                                    Console.WriteLine("Resultado final: " + newresult);
-                                    if (newresult == finalresult)
-                                    {
-                                        Console.WriteLine("Exito" + "\n");
-                                    }
-                                    else
-                                        Console.WriteLine("Fallo" + "\n");
-                                    break;
-                            }
+                            else
+                                Console.WriteLine("Valor de entrada es NULL. No valido!" + "\n");
+                            
                         }
-                        else
-                            Console.WriteLine("Valor de entrada es NULL. No valido!");
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e.Message + "\n");
+                        }
 
                         Console.ReadKey();
                     }
