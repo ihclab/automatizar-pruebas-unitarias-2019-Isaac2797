@@ -20,8 +20,16 @@ namespace Pruebas
                     while ((row = sr.ReadLine()) != null)
                     {
                         Casos = row.Split(':');
-                        foreach (string word in Casos)
-                            Console.WriteLine(word);
+                        double finalresult = Convert.ToDouble(Casos[3]);
+                        string[] numbers = Casos[2].Split(' ');
+                        int[] values = new int[numbers.Length];
+                        int inc = 0;
+                        foreach(string number in numbers)
+                        {
+                            values[inc] = Convert.ToInt32(number);
+                            inc++;
+                        }
+
                     }
                     Console.ReadLine();
                 }
