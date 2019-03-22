@@ -51,7 +51,7 @@ namespace Pruebas
             double sum = 0;
             for (int i = 0; i < vals.Length; i++)
             {
-                sum += 1 / vals[i];
+                sum += (1 / Convert.ToDouble(vals[i]));
             }
             return vals.Length / sum;
         }
