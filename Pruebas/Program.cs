@@ -49,23 +49,25 @@ namespace Pruebas
                                         Console.WriteLine("Resultado final: " + newresult);
                                         if (newresult == finalresult)
                                         {
-                                            Console.WriteLine("Exito" + "\n");
+                                            Console.WriteLine("Exito" + "\n", Console.ForegroundColor = ConsoleColor.Green);
                                         }
                                         else
-                                            Console.WriteLine("Fallo" + "\n");
+                                            Console.WriteLine("Fallo" + "\n", Console.ForegroundColor = ConsoleColor.Red);
+                                        Console.ResetColor();
                                         break;
 
                                     case "mediaGeometrica":
-
                                         newresult = medias.mediaGeometrica(values);
                                         newresult = Math.Truncate(10000 * newresult) / 10000;
                                         Console.WriteLine("Resultado final: " + newresult);
                                         if (newresult == finalresult)
                                         {
-                                            Console.WriteLine("Exito" + "\n");
+                                            Console.WriteLine("Exito" + "\n", Console.ForegroundColor = ConsoleColor.Green);
+                                            Console.ResetColor();
                                         }
                                         else
-                                            Console.WriteLine("Fallo" + "\n");
+                                            Console.WriteLine("Fallo" + "\n", Console.ForegroundColor = ConsoleColor.Red);
+                                        Console.ResetColor();
                                         break;
 
                                     case "mediaArmonica":
@@ -74,10 +76,11 @@ namespace Pruebas
                                         Console.WriteLine("Resultado final: " + newresult);
                                         if (newresult == finalresult)
                                         {
-                                            Console.WriteLine("Exito" + "\n");
+                                            Console.WriteLine("Exito" + "\n", Console.ForegroundColor = ConsoleColor.Green);
                                         }
                                         else
-                                            Console.WriteLine("Fallo" + "\n");
+                                            Console.WriteLine("Fallo" + "\n", Console.ForegroundColor = ConsoleColor.Red);
+                                        Console.ResetColor();
                                         break;
                                 }
                             }

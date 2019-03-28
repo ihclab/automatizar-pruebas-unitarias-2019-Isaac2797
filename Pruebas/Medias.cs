@@ -27,7 +27,8 @@ namespace Pruebas
          */
         private static double raizEnesima(double x, int n)
         {
-            return Math.Pow(x, 1 / Convert.ToDouble(n));
+            decimal expo = Convert.ToDecimal(n); 
+            return Math.Pow(x, Convert.ToDouble(1 /expo));
         }
 
         /**
