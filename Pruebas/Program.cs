@@ -13,6 +13,7 @@ namespace Pruebas
         static void Main(string[] args)
         {
             Medias medias = new Medias();
+            //Actividad 02
             Stopwatch sw = new Stopwatch();
             string save = DateTime.Now.ToString() + "\r\n";
             string[] Casos;
