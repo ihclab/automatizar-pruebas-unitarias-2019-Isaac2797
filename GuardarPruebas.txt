@@ -1,0 +1,70 @@
+29/03/2019 03:02:23 a. m.
+0001:mediaAritmetica:2 6 10:6.0000:
+Resultado final 6
+Exito
+Tiempo de ejecucion: 00:00:00.0043464
+
+0002:mediaAritmetica:6 8:7.0000:
+Resultado final 7
+Exito
+Tiempo de ejecucion: 00:00:00.0007291
+
+0003:mediaAritmetica:5 4 4:4.6666:
+Resultado final 4.3333
+Exito
+Tiempo de ejecucion: 00:00:00.0040375
+
+0004:mediaAritmetica:7 9 4:6.6666:
+Resultado final 6.6666
+Exito
+Tiempo de ejecucion: 00:00:00.0016721
+
+0005:mediaAritmetica:8 4 3 6:5.2500:
+Resultado final 5.25
+Exito
+Tiempo de ejecucion: 00:00:00.0049288
+
+0006:mediaArmonica:7 9 4:5.9527:
+Resultado final 5.9527
+Exito
+Tiempo de ejecucion: 00:00:00.0048524
+
+0007:mediaArmonica:2 3 6:3.0000:
+Resultado final 3
+Exito
+Tiempo de ejecucion: 00:00:00.0047735
+
+0008:mediaArmonica:3 5 7:4.4366:
+Resultado final 4.4366
+Exito
+Tiempo de ejecucion: 00:00:00.0128055
+
+0009:mediaArmonica:2 5:2.8571:
+Resultado final 2.8571
+Exito
+Tiempo de ejecucion: 00:00:00.0076181
+
+0010:mediaArmonica:7 9:7.8750:
+Resultado final 7.875
+Exito
+Tiempo de ejecucion: 00:00:00.0059596
+
+0011:mediaGeometrica:1 2 4 8 16 32:6.6569:
+Resultado final 5.6568
+Exito
+Tiempo de ejecucion: 00:00:00.0060974
+
+0012:mediaGeometrica:0 0 0 0:Exception:0013:mediaGeometrica:NULL:0.0000:
+Valor de entrada es NULL. No valido!
+Tiempo de ejecucion: 00:00:00.0341866
+
+0014:mediaGeometrica:NULL:0.0000:
+Valor de entrada es NULL. No valido!
+Tiempo de ejecucion: 00:00:00.0050534
+
+0015:mediaGeometrica:2 4 8:4.0000:
+Resultado final 4
+Exito
+Tiempo de ejecucion: 00:00:00.0068279
+
+
